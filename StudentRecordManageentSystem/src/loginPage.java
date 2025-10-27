@@ -152,6 +152,19 @@ public class loginPage extends javax.swing.JFrame {
 
     private void LoginBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginBtnActionPerformed
         // TODO add your handling code here:
+        String [] Emails = {"ekwes@cput.ac.za","julius@cput.ac.za","moses@cput.ac.za"}
+            String [] Passwords = {"NewPassword","MyPassword","thePassword"}
+            for(int i = 0; i<2;i++)
+            {
+                if(EmailTF.getText().equals(Emails[i]) && PasswordTF.getText().equals(Passwords[i]))
+                {
+                    
+                }
+                else
+                {
+                    JOptonPane.showMessageDialog(null,"Invalid information !");
+                }
+            }
     }//GEN-LAST:event_LoginBtnActionPerformed
 
     private void PasswordTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordTFActionPerformed
